@@ -1,0 +1,223 @@
+ /* int Peugeot = 234;
+      int Renault = 154;
+      int BMW = 565;
+
+      Scanner scanner = new Scanner (System.in);
+
+      System.out.println("Veuillez entrer la somme de Peugeot");
+        int peugeot = scanner.nextInt();
+
+      System.out.println("veuillez entrer la somme de Renault");
+      int renault = scanner.nextInt();
+
+      System.out.println("veuillez entrer la somme de BMW");
+      int bmw = scanner.nextInt();
+
+      if(Peugeot<Renault){
+          System.out.println("Peugeot à la plus grande révenue car elle posséde " +Peugeot + "Md$");
+      }else {
+          System.out.println("Renault à la plus grnade révenue car elle posséde " + Renault + "Md$");
+      }
+      if(Peugeot<BMW) {
+          System.out.println("Peugeot à la plus grande révenue car elle posséde " + Peugeot + "Md$");
+      }else{
+          System.out.println("BMW posséde la plus grande révenue car elle posséde " +BMW+ "Md$");
+      }
+*/
+
+
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("veuillez entrer la note (entre 0 et  20) :");
+        int note = scanner.nextInt();
+
+        if (note >= 0 && note <= 20) {
+            if (note > 10) {
+                System.out.println("Validé");
+            } else {
+                System.out.println("Non validé");
+            }
+
+        }else{ System.out.println("Note non validé. Veuillez saisir la note (entre 0 et 20): ");
+
+    }
+
+      /*  Calcul d'IMC:
+
+        Demander à l'utilisateur de saisir sa taille en mètres et son poids en kilogrammes.
+        Calculer son indice de masse corporelle (IMC).
+                Afficher un message indiquant si la personne est en sous-poids, en surpoids ou dans la norme en fonction
+        des valeurs de l'IMC.
+        */
+
+
+       /* Scanner scanner = new Scanner (System.in);
+        System.out.println("veuillez saisir votre poids (en kg): ");
+        double poids = scanner.nextDouble();
+
+        System.out.println("veuillez saisr votre taille (en métres):");
+        double taille= scanner.nextDouble();
+
+        double IMC = poids / (taille * taille);
+
+        if(IMC < 18.5){
+            System.out.println("Vous êtes en sous-poids.");
+        } else if (IMC < 25) {
+            System.out.println("Vous êtes dans la norme.");
+        } else {
+            System.out.println("Vous êtes en sur-poids.");
+        }
+*/
+
+       /* Notes d'étudiants:
+
+        Demander à l'utilisateur de saisir une note sur 20.
+        Afficher une appréciation (Excellent, Très bien, Bien, Passable, Insuffisant) en fonction de la note.
+                Ajouter une condition pour gérer les notes en dehors de l'intervalle [0,20].
+ */
+      /*  Scanner scanner = new Scanner(System.in);
+
+        System.out.println("veuillez entrer votre note compris (entre 0 et 20)");
+        double note = scanner.nextDouble();
+
+        if (note >= 20) {
+            System.out.println("Exellent");
+
+        } else if ((note >= 17) || (note >= 18)) {
+            System.out.println("Trés bien ");
+
+        }else if ((note >= 14) || (note >= 15)){
+            System.out.println("Bien");
+
+        }else if ((note >= 10) || (note >=11)){
+            System.out.println("Passable");}
+    */
+
+       /* Triangle:
+
+        Demander à l'utilisateur de saisir les longueurs des trois côtés d'un triangle.
+        Vérifier si ces longueurs forment bien un triangle
+        (la somme de deux côtés doit être strictement supérieure au troisième).
+        Si c'est un triangle, déterminer s'il est équilatéral, isocèle ou scalène.
+        */
+
+
+       /* Scanner scanner = new Scanner(System.in);
+        System.out.println("Entrer la première  mesrue (en cm) ");
+        Double mesure1 = scanner.nextDouble();
+
+        System.out.println("Entrer la deuxième mesure (en cm)");
+        Double mesure2 = scanner.nextDouble();
+
+        System.out.println("Entrer la troisième mesure (en cm)");
+        Double mesure3 = scanner.nextDouble();
+
+        // Vérifions si les trois mesures forment un triangle
+        if (mesure1 + mesure2 > mesure3 && mesure2 + mesure3 > mesure1 && mesure3 + mesure1 > mesure2) ;
+        System.out.println("les trois mesures forment un triangle");
+
+        // Classification des triangles
+        if (mesure1 == mesure2 && mesure2 == mesure3) {
+            System.out.println("c'est un triangle Equilatéral");
+        } else if ( mesure1 == mesure2 || mesure1 == mesure3 || mesure2 == mesure3 ) {
+
+            System.out.println("c'est un triangle Isocèle ");}
+
+        else  {
+            System.out.println("c'est un traingle Scalène ");
+        }
+        else{
+            System.out.println("Les trois mesures ne forment pas un triangle.");}
+
+        }}
+*/
+
+
+
+
+
+
+     /*    Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Entrez la longueur du premier côté (en cm) : ");
+        double mesure1 = scanner.nextDouble();
+
+        System.out.print("Entrez la longueur du deuxième côté (en cm) : ");
+        double mesure2 = scanner.nextDouble();
+
+        System.out.print("Entrez la longueur du troisième côté (en cm) : ");
+        double mesure3 = scanner.nextDouble();
+
+        // Vérifions si les trois mesures forment un triangle
+        if (mesure1 + mesure2 > mesure3 && mesure2 + mesure3 > mesure1 && mesure3 + mesure1 > mesure2) {
+            System.out.println("Les trois mesures forment un triangle.");
+
+            // Classification des triangles
+            if (mesure1 == mesure2 && mesure2 == mesure3) {
+                System.out.println("c'est un triangle équilatéral.");
+            } else if (mesure1 == mesure2 || mesure1 == mesure3 || mesure2 == mesure3) {
+                System.out.println("c'est un triangle isocèle.");
+            } else {
+                System.out.println("c'est un triangle scalène.");
+            }
+        } else {
+            System.out.println("Les trois mesures ne forment pas un triangle.");
+
+       }}}
+*/
+
+     /*   Écrire un programme en Java qui demande deux nombres m et n à l’utilisateur et l’informe ensuite
+        si le produit de ces deux nombres est positif ou négatif. On inclut dans le programme le cas où
+        le produit peut être nul.
+*/
+
+      /*  Scanner scaner = new Scanner (System.in);
+        System.out.println("Entrer le premier nombre ");
+        Double M1 = scaner.nextDouble();
+
+        System.out.println("Entrer le deuxième nombre ");
+        Double N2 = scaner.nextDouble();
+
+        if(M1*N2<0) {
+            System.out.println("le résultat est négatif ");
+
+        }else if (M1*N2>0){
+            System.out.println("le résultat est positif");}
+
+        else if(M1*N2==0){
+            System.out.println("le resultat est nul");
+        }
+    */
+        /* Écrire un programme en Java qui demande l'âge d'un enfant et permet d'informer de sa catégorie
+        sachant que les catégories sont les suivantes:
+        "poussin de 6 a 7 ans"
+        "pupille de 8 a 9 ans "
+        "minime de 10 a 11 ans "
+        " cadet après 12 ans "
+*/
+
+      /*  Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Veuillez entrer l'age de votre ou de l'enfant");
+        int age = scanner.nextInt();
+
+        // Chercchons la catégorie de l'enfant selon son age.
+
+        if (age==6 || age==7){
+            System.out.println("Sa catégorie est : poussin");
+
+        }else if((age==8) || (age==9)){
+            System.out.print("Sa catégorie est : Pupille");
+
+        } else if ((age==10) || (age==11)){
+            System.out.println("Sa catégorie est : Minime");
+
+        }else if ((age>=12)){
+            System.out.println("Sa catégorie est : Cadet");
+        }
+
+
+    }}*/
+        
+       }}
