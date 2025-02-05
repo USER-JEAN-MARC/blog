@@ -217,7 +217,41 @@
             System.out.println("Sa catégorie est : Cadet");
         }
 
-
     }}*/
-        
+           Scanner scanner = new Scanner (System.in);
+    System.out.println("Veuillez saisir un nombre compris (1 à 7)");
+    int jour = scanner.nextInt();
+
+    //Déclration d'une variable 'jours'
+        String jours;
+        switch (jour) {
+            case 1: // Si 'jour' vaut 1
+            jours = "Lindi";
+            break; // Sortir du 'switch'
+            case 2: // Si 'jour' vaut 2
+            jours = "Mardi";
+            break; // Sortir du'switch'
+            case 3: // Si 'jour' vaut 3
+            jours = "Mercerdi";
+            break; // Sortir du 'switch'
+            case 4: // Si 'jour' vaut 4
+            jours = "Jeudi";
+            break; // Sotir du 'switch'
+            case 5: // Si 'jour' vaut 5
+            jours = "Vendredi";
+            break; // Sotir du 'switch'
+            case 6: // Si 'jour' vaut 6
+            jours = "Samedi";
+            break;// Sotir du 'switch'
+            case 7: // Si 'jour' vaut 7
+            jours = "Dimancche";
+            break;
+            default: //Si 'jours' ne correspond à aucun des cas ci-dessus
+               jours = "jours inconu";
+               break;
+
+
+        }
+    System.out.println("Le jour est : " +jours );
+    
        }}
